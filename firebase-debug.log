@@ -1,0 +1,96 @@
+[debug] [2017-09-14T13:19:41.998Z] ----------------------------------------------------------------------
+[debug] [2017-09-14T13:19:41.998Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\bin\firebase init fuctions
+[debug] [2017-09-14T13:19:41.998Z] CLI Version:   3.10.1
+[debug] [2017-09-14T13:19:41.998Z] Platform:      win32
+[debug] [2017-09-14T13:19:41.998Z] Node Version:  v8.3.0
+[debug] [2017-09-14T13:19:41.998Z] Time:          Thu Sep 14 2017 16:19:41 GMT+0300 (Belarus Standard Time)
+[debug] [2017-09-14T13:19:41.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-14T13:19:42.017Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-09-14T13:19:42.017Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\code\pizzaTwilio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-09-14T13:19:48.811Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-09-14T13:19:48.811Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/oFAFeDSz5xRQ20Bn4YCeA8gHOMi2drh2qU-p7AawiyE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Sep 14 2017 16:19:48 GMT+0300 (Belarus Standard Time)
+[debug] [2017-09-14T13:19:49.412Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T13:19:49.427Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Thu Sep 14 2017 16:19:49 GMT+0300 (Belarus Standard Time)
+[debug] [2017-09-14T13:19:50.204Z] <<< HTTP RESPONSE 200
+[info] 
+=== Fuctions Setup
+[debug] [2017-09-14T13:20:15.767Z] TypeError: features[nextFeature] is not a function
+    at init (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\lib\init\index.js:14:46)
+    at C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\lib\init\index.js:15:14
+    at tryCatch (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:525:12)
+    at invokeCallback (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:538:13)
+    at publish (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:508:7)
+    at flush (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:2415:5)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-09-14T13:20:28.915Z] ----------------------------------------------------------------------
+[debug] [2017-09-14T13:20:28.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\bin\firebase init fuctions
+[debug] [2017-09-14T13:20:28.915Z] CLI Version:   3.10.1
+[debug] [2017-09-14T13:20:28.915Z] Platform:      win32
+[debug] [2017-09-14T13:20:28.915Z] Node Version:  v8.3.0
+[debug] [2017-09-14T13:20:28.915Z] Time:          Thu Sep 14 2017 16:20:28 GMT+0300 (Belarus Standard Time)
+[debug] [2017-09-14T13:20:28.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-14T13:20:28.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-09-14T13:20:28.915Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\code\pizzaTwilio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-09-14T13:20:32.128Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Thu Sep 14 2017 16:20:32 GMT+0300 (Belarus Standard Time)
+[debug] [2017-09-14T13:20:32.846Z] <<< HTTP RESPONSE 200
+[info] 
+=== Fuctions Setup
+[debug] [2017-09-14T13:20:39.198Z] TypeError: features[nextFeature] is not a function
+    at init (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\lib\init\index.js:14:46)
+    at C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\lib\init\index.js:15:14
+    at tryCatch (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:525:12)
+    at invokeCallback (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:538:13)
+    at publish (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:508:7)
+    at flush (C:\Users\Artsiom_Kukharev\AppData\Roaming\nvm\v8.3.0\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:2415:5)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+[error] 
+[error] Error: An unexpected error has occurred.
