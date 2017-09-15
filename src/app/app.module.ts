@@ -8,7 +8,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { PizzaStatusComponent } from './pizza-status/pizza-status.component';
 import { AuthService } from './services/auth.service';
 import { environment } from '../environments/environment';
 
@@ -24,8 +23,7 @@ import { environment } from '../environments/environment';
     JsonpModule
   ],
   declarations: [
-    AppComponent,
-    PizzaStatusComponent
+    AppComponent
   ],
   providers: [AuthService],
   bootstrap: [ AppComponent ]
