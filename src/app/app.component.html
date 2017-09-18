@@ -25,3 +25,17 @@ Our input fields two-way bind to the email and password
     <button (click)="updateData()">updateData</button>
     <button (click)="sendMessage()">send message</button>
 </div>
+<div class="wrapper" *ngIf="authService.user | async">
+  <span>FCMmessageTitle:</span>
+  <input type="text" name="sendTo" [(ngModel)]="msgService.title" placeholder="title"><br>
+  <span>FCMmessageBody:</span>
+  <input type="text" name="message" [(ngModel)]="msgService.body" placeholder="body"><br>
+  <button (click)="msgService.storeAndSendMessage()">store and send message</button>
+</div>
+<div class="wrapper message" *ngIf="(FCMmessage | async)?.notification.title">
+  <img [src]="(FCMmessage | async)?.notification.icon"/>
+  <div>
+    <p class="title">{{ (FCMmessage | async)?.notification.title }}</p>
+    <p>{{ (FCMmessage | async)?.notification.body }}</p>
+  </div>  
+</div>

@@ -7,6 +7,7 @@ import * as firebase from 'firebase/app';
 import 'rxjs/add/operator/map';
 
 import { AuthService } from './services/auth.service';
+import { MessagingService } from "./services/messaging.service";
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['app.component.css']
 })
 export class AppComponent implements OnInit{
+  FCMmessage: any;
   email: string = '';
   password: string = '';
   message: string;
@@ -24,11 +26,15 @@ export class AppComponent implements OnInit{
     private db: AngularFireDatabase,
     private afAuth: AngularFireAuth,
     public authService: AuthService,
+    private msgService: MessagingService,
     public http: Http,
     public Jsonp: Jsonp) {}
   
   ngOnInit() {
     if(this.authService.user) this.getDB();
+    this.msgService.getPermission();
+    this.msgService.receiveMessage();
+    this.FCMmessage = this.msgService.currentMessage;
   }
   
   getDB() {

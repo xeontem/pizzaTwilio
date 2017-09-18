@@ -4,3 +4,22 @@
     border: 2px solid red;
     padding: 20px;
 }
+
+.message {
+    display: flex;
+    align-items: start;
+}
+
+.message div {
+    margin: 5px;
+}
+
+.message div p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 16pt;
+    font-weight: 600;
+}
